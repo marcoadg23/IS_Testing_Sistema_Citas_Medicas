@@ -7,7 +7,7 @@ driver = webdriver.Chrome()
 driver.get("https://marcoadg23.github.io/IS2026-2-Sistema-citas-medicas/")
 
 #A - Verificar
-assert "Login" in driver.title
+assert driver.title=="Login"
 print("El sistema cargó correctamente")
 print("Título:", driver.title)
 
